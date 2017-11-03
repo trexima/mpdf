@@ -32047,9 +32047,9 @@ function AdjustHTML($html, $tabSpaces=8) {
 	$html = preg_replace('/<table[^>]*>\s*<\/table>/i','',$html);
 
 	// Remove spaces at end of table cells
-	$html = preg_replace("/[ \n\r]+<\/t(d|h)/",'</t\\1',$html);	
+	//$html = preg_replace("/[ \n\r]+<\/t(d|h)/",'</t\\1',$html);	
 
-	$html = preg_replace("/[ ]*<dottab\s*[\/]*>[ ]*/",'<dottab />',$html);
+	//$html = preg_replace("/[ ]*<dottab\s*[\/]*>[ ]*/",'<dottab />',$html);
 
 	// Concatenates any Substitute characters from symbols/dingbats
 	$html = str_replace('</tts><tts>','|',$html);
